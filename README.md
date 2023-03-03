@@ -1,11 +1,16 @@
-
-Forked repository, changes made by kianwasabi: 
-== Changelog ==
-= 0.4 =
+## Embed Block for GitHub - modifed
+Forked repository & modified repo ""
+## Idea/Requirements: 
+with authorized API requests instead of anonymous ones
+## Concept: 
 * Removed dark mode.
 * incluced authorized request to https://api.github.com through Bearer token
 -----------------------------------------
-Orininal Readme.txt written by audrasjb: 
+## Status:
+In progess
+## Author: 
+audrasjb, whodunitagency, pedromendonca, vsc55 // modified by kianwasabi
+## Orininal Readme.txt written by audrasjb: 
 === Embed Block for GitHub ===
 Contributors: audrasjb, whodunitagency, pedromendonca, vsc55
 Donate link: https://www.paypal.me/audrasjb
