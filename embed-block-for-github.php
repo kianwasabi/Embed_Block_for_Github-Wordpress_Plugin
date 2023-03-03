@@ -110,10 +110,8 @@ class embed_block_for_github {
 
 	public function ebg_embed_repository( $attributes ) {
 		$github_url = trim( $attributes['github_url'] );
-		$darck_mode = (in_array("darck_mode", $attributes) ? $attributes['darck_mode'] : false);
 		
 		$a_remplace = [];
-		$a_remplace['%%_WRAPPER_DARK_MODE_%%'] = "ebg-br-wrapper-dark-mode-" . ($darck_mode ? "on" : "off");
 		
 		if ( '' === trim( $github_url ) ) {
 			$content = '<p>' . esc_html__( 'Use the Sidebar to add the URL of the GitHub Repository to embed.', 'embed-block-for-github' ) . '</p>';
@@ -121,28 +119,14 @@ class embed_block_for_github {
 	
 			if ( filter_var( $github_url, FILTER_VALIDATE_URL ) ) {
 				if ( strpos( $github_url, 'https://github.com/' ) === 0 ) {
-					if ( get_transient( '_ebg_repository_' . sanitize_title_with_dashes( $github_url ) ) ) 
-					{
-						$data = json_decode( get_transient( '_ebg_repository_' . sanitize_title_with_dashes( $github_url ) ) );
-						if (isset( $data->message ) ) 
-						{
-							$content = $this->check_message($data->message);
-						}
-						else {
-							$content = $this->process_template('repository.php', $data);
-							$a_remplace['%%_DATA_AVATAR_URL_%%'] = $data->owner->avatar_url;
-							$a_remplace['%%_DATA_REPO_URL_%%'] = $data->html_url;
-							$a_remplace['%%_DATA_REPO_NAME_%%'] = $data->name;
-							$a_remplace['%%_DATA_AUTOR_URL_%%'] = $data->owner->html_url;
-							$a_remplace['%%_DATA_AUTOR_NAME_%%'] = $data->owner->login;
-							$a_remplace['%%_DATA_DESCIPTION_%%'] = $data->description;
-						}
-						unset($data);
-					} 
-					else {
+						$token = 'Generate personal access tokens -> https://github.com/settings/tokens';
+						$args = array(
+							'headers' => array(
+								'Authorization' => 'Bearer ' . $token,
+							),
+						);
 						$slug = str_replace( 'https://github.com/', '', $github_url );
-						$request = wp_remote_get( 'https://api.github.com/repos/' . $slug );
-
+						$request = wp_remote_get( 'https://api.github.com/repos/'.$slug, $args);
 						$body = wp_remote_retrieve_body( $request );
 						$data = json_decode( $body );
 						if ( ! is_wp_error( $response ) ) {
@@ -151,9 +135,9 @@ class embed_block_for_github {
 							{
 								$content = $this->check_message($data->message);
 							} 
-							else {
+							else 
+							{
 								$content = $this->process_template('repository.php', $data);
-								
 								$a_remplace['%%_DATA_AVATAR_URL_%%'] = $data->owner->avatar_url;
 								$a_remplace['%%_DATA_REPO_URL_%%'] = $data->html_url;
 								$a_remplace['%%_DATA_REPO_NAME_%%'] = $data->name;
@@ -165,7 +149,6 @@ class embed_block_for_github {
 							$content = '<p>' . esc_html__( 'No information available. Please check your URL.', 'embed-block-for-github' ) . '</p>';
 						}
 						unset($data);
-					}
 				} else {
 					$content = '<p>' . esc_html__( 'Use the Sidebar to add the URL of the GitHub Repository to embed.', 'embed-block-for-github' ) . '</p>';
 				}

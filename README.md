@@ -1,3 +1,11 @@
+
+Forked repository, changes made by kianwasabi: 
+== Changelog ==
+= 0.4 =
+* Removed dark mode.
+* incluced authorized request to https://api.github.com through Bearer token
+-----------------------------------------
+Orininal Readme.txt written by audrasjb: 
 === Embed Block for GitHub ===
 Contributors: audrasjb, whodunitagency, pedromendonca, vsc55
 Donate link: https://www.paypal.me/audrasjb
