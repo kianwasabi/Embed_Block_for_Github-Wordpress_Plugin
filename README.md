@@ -9,8 +9,9 @@ with authorized API requests instead of anonymous ones
 ## Status:
 In progess
 ## Author: 
-audrasjb, whodunitagency, pedromendonca, vsc55 // modified by kianwasabi
-## Orininal Readme.txt written by audrasjb: 
+* audrasjb, whodunitagency, pedromendonca, vsc55 // modified by kianwasabi
+-----------------------------------------
+## Orginal README written by audrasjb: 
 === Embed Block for GitHub ===
 Contributors: audrasjb, whodunitagency, pedromendonca, vsc55
 Donate link: https://www.paypal.me/audrasjb
