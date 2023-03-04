@@ -10,7 +10,7 @@
 * incluced authorized request to https://api.github.com through Bearer token
 -----------------------------------------
 ## Status:
-Works fine, with a few upcoming enhancements 
+Works fine, potential for enhancements 
 ## Author: 
 *  modified by Kian David Warias (Original Contributors: audrasjb, whodunitagency, pedromendonca, vsc55)
 -----------------------------------------
