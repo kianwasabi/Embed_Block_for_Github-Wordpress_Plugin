@@ -9,7 +9,7 @@ with authorized API requests instead of anonymous ones
 ## Status:
 In progess
 ## Author: 
-* audrasjb, whodunitagency, pedromendonca, vsc55 // modified by kianwasabi
+*  modified by Kian David Warias (Original Contributors: audrasjb, whodunitagency, pedromendonca, vsc55)
 -----------------------------------------
 ## Orginal README written by audrasjb: 
 === Embed Block for GitHub ===
