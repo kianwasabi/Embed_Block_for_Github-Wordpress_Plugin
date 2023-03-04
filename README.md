@@ -6,11 +6,11 @@
 * Workaround: authorized API requests @ github instead of anonymous ones
 * Furthermore, I do not like the "darkmode" option. 
 ## Concept: 
-* removed dark mode from css/php 
+* removed dark mode from css/php files
 * incluced authorized request to https://api.github.com through Bearer token
 -----------------------------------------
 ## Status:
-In progess
+Works fine, with a few upcoming enhancements 
 ## Author: 
 *  modified by Kian David Warias (Original Contributors: audrasjb, whodunitagency, pedromendonca, vsc55)
 -----------------------------------------
