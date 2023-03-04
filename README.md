@@ -1,9 +1,12 @@
 ## Embed Block for GitHub - modifed
-Forked repository & modified repo ""
+* Forked repository embed-block-for-github
+* Plugin for wordpress that displays github repositories on a tile
 ## Idea/Requirements: 
-with authorized API requests instead of anonymous ones
+* Github public requests are limited to 1500 calls / day. Whenever you want to run the original plugin on a hosted server, that requests github.com frequently with its public IP address -> risk that the number of allowed api calls is already reached. 
+* Workaround: authorized API requests @ github instead of anonymous ones
+* Furthermore, I do not like the "darkmode" option. 
 ## Concept: 
-* Removed dark mode.
+* removed dark mode from css/php 
 * incluced authorized request to https://api.github.com through Bearer token
 -----------------------------------------
 ## Status:
