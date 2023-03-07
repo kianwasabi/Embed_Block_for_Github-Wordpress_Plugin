@@ -3,12 +3,12 @@
 * Forked from repository "embed-block-for-github"
 ## Idea/requirements for modifications: 
 * Github limits (unauthorized) user-client requests to 15.000 calls/hour public.  
-Whenever you run the original plugin on a hosted server, that requests github.com with its public IP address, the risk that the number of allowed api calls is already reached. 
+Whenever you run the original plugin on a hosted server (that requests a Github with its public IP address) the risk that the number of allowed calls is reached in no time.
 * Workaround: authorized API requests @ github instead of anonymous ones
-* Design: Remove "darkmode" option. 
+* Design: Remove "darkmode" option
 ## Concept: 
-* Incluced authorized request to https://api.github.com through Bearer token
-* Removed dark mode from .css/.php/.js files
+* Incluced authorized request to https://api.github.com through personalized bearer token
+* Removed dark mode from files
 -----------------------------------------
 ## Status:
 Works fine, potential for enhancements 

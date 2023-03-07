@@ -23,7 +23,7 @@ if ( ! defined( 'WPINC' ) ) {
 class embed_block_for_github {
 
 	private function msgdebug ($msg) {
-		//$this->msgdebug("PAHT:".plugin_dir_path( __FILE__ ));
+		//$this->msgdebug("PAHT:".plugin_dir_path( __FILE__ ))
 		error_log("DEBUG: ".$msg, 0);
 	}
 
@@ -57,7 +57,6 @@ class embed_block_for_github {
 			'render_callback' => array( $this, 'ebg_embed_repository' ),
 			'attributes'      => array(
 				'github_url' => array( 'type' => 'string' ),
-				'darck_mode' => array( 'type' => 'boolean' ),
 			),
 		) );
 	}
@@ -110,7 +109,7 @@ class embed_block_for_github {
 
 	public function ebg_embed_repository( $attributes ) {
 		$github_url = trim( $attributes['github_url'] );
-		
+		// $token = trim($attributes['github_token']);
 		$a_remplace = [];
 		
 		if ( '' === trim( $github_url ) ) {

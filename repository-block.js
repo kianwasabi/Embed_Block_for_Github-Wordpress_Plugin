@@ -7,9 +7,7 @@
 	var MediaUpload = wp.editor.MediaUpload
 	var InspectorControls = wp.editor.InspectorControls
 	var TextControl = components.TextControl
-	// var ToggleControl = wp.components.ToggleControl
 	var ServerSideRender = components.ServerSideRender
-	// var withState = wp.compose.withState
 
 	var github_icon = 
 		el( 'svg' , 
@@ -32,17 +30,15 @@
 		github_url: {
 	    	type: 'string',
 		},
-		darck_mode: {
-			type: 'boolean',
-			default: false,
-		},
+		// github_token: {
+	    // 	type: 'string',
+		// },
 	},
 
 	edit: function ( props ) {
 		var attributes = props.attributes
 		var github_url = props.attributes.github_url
-		// var darck_mode = props.attributes.darck_mode
-
+		var github_token = props.attributes.github_token
 		return [
 			el( 'div', { className: 'components-block-description' },
 				el( ServerSideRender, {
@@ -69,12 +65,13 @@
 							}
 						}
 					),
-					// el (
-					// 	ToggleControl, {
-					// 		label: i18n.__( 'Activate Dark Mode' ),
-					// 		checked: darck_mode,
-					// 		onChange: function ( new_mode ) {
-					// 			props.setAttributes( { darck_mode: new_mode } )
+					// el(
+					// 	TextControl, {
+					// 		type: 'text',
+					// 		label: i18n.__( 'Enter personalized Github access token' ),
+					// 		value: github_token,
+					// 		onChange: function ( new_token ) {
+					// 			props.setAttributes( { github_token: new_token } )
 					// 		}
 					// 	}
 					// ),
