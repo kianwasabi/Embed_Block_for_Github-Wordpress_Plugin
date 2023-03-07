@@ -2,8 +2,8 @@
 * Plugin for wordpress that displays github repositories on a card.
 * Forked from repository "embed-block-for-github"
 ## Idea/requirements for modifications: 
-* Github limits (unauthorized) user-client requests to 15.000 calls/hour public Unauthorized requests are . 
-Whenever you want to run the plugin on a hosted server, that requests github.com with its public IP address -> risk that the number of allowed api calls is already reached. 
+* Github limits (unauthorized) user-client requests to 15.000 calls/hour public.  
+Whenever you run the original plugin on a hosted server, that requests github.com with its public IP address, the risk that the number of allowed api calls is already reached. 
 * Workaround: authorized API requests @ github instead of anonymous ones
 * Design: Remove "darkmode" option. 
 ## Concept: 
