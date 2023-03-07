@@ -1,4 +1,5 @@
-<div class="ebg-br-wrapper %%_WRAPPER_DARK_MODE_%%">
+<!-- <div class="ebg-br-wrapper %%_WRAPPER_DARK_MODE_%%"> -->
+<div class="ebg-br-wrapper %%_WRAPPER_%%">
 	<div class="ebg-br-background-image"></div>
 	<div class="ebg-br-avatar">
 		<img class="ebg-br-header-avatar" src="%%_DATA_AVATAR_URL_%%" alt="" width="150" height="150" />

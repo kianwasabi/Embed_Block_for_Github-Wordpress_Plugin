@@ -7,9 +7,9 @@
 	var MediaUpload = wp.editor.MediaUpload
 	var InspectorControls = wp.editor.InspectorControls
 	var TextControl = components.TextControl
-	var ToggleControl = wp.components.ToggleControl
+	// var ToggleControl = wp.components.ToggleControl
 	var ServerSideRender = components.ServerSideRender
-	var withState = wp.compose.withState
+	// var withState = wp.compose.withState
 
 	var github_icon = 
 		el( 'svg' , 
@@ -41,7 +41,7 @@
 	edit: function ( props ) {
 		var attributes = props.attributes
 		var github_url = props.attributes.github_url
-		var darck_mode = props.attributes.darck_mode
+		// var darck_mode = props.attributes.darck_mode
 
 		return [
 			el( 'div', { className: 'components-block-description' },
@@ -69,15 +69,15 @@
 							}
 						}
 					),
-					el (
-						ToggleControl, {
-							label: i18n.__( 'Activate Dark Mode' ),
-							checked: darck_mode,
-							onChange: function ( new_mode ) {
-								props.setAttributes( { darck_mode: new_mode } )
-							}
-						}
-					),
+					// el (
+					// 	ToggleControl, {
+					// 		label: i18n.__( 'Activate Dark Mode' ),
+					// 		checked: darck_mode,
+					// 		onChange: function ( new_mode ) {
+					// 			props.setAttributes( { darck_mode: new_mode } )
+					// 		}
+					// 	}
+					// ),
 				)
 			),			
 		]
