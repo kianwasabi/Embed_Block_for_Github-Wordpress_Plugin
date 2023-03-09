@@ -2,7 +2,7 @@
 This WordPress plugin adds your favorite GitHub Repositories as a Embed Block to the Block Editor.
 <br>
 It is based on a plugin called "embed-block-for-github" ([GitHub](https://github.com/audrasjb/embed-block-for-github))<br>
-Unfortunately, the orginal plugin does not work as I expected. 
+Unfortunately, the original plugin did not work as expected and had some issues which needed to be tackled. 
 The plugin is modified to fulfill the shown Requirements below. 
 ## Stuff to modify: 
 1) <kbd>FIX API RATE LIMIT EXCEEDED </kbd><br>
