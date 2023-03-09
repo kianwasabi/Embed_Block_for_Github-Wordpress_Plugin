@@ -25,7 +25,7 @@
 	pointer-events: none; /* make hyperlinks clickable */
 }
 
-.ebg-br-wrapper .ebg-br-avatar {
+/* .ebg-br-wrapper .ebg-br-avatar {
 	display: inline-block;
 	margin: 0 1em 0 0;
 	min-width: 150px;
@@ -37,7 +37,7 @@
 }
 
 .ebg-br-wrapper .ebg-br-avatar .ebg-br-header-avatar {
-}
+} */
 
 .ebg-br-wrapper .ebg-br-main {
 	display: inline-block;
