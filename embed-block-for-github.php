@@ -7,7 +7,7 @@
  * Plugin Name:       Embed Block for GitHub
  * Plugin URI:        https://jeanbaptisteaudras.com/embed-block-for-github-gutenberg-wordpress/
  * Description:       Easily embed GitHub repositories in Gutenberg Editor.
- * Version:           0.3
+ * Version:           0.4
  * Author:            audrasjb
  * Author URI:        https://jeanbaptisteaudras.com
  * License:           GPL-2.0+
@@ -22,10 +22,10 @@ if ( ! defined( 'WPINC' ) ) {
 
 class embed_block_for_github {
 
-	private function msgdebug ($msg) {
-		//$this->msgdebug("PAHT:".plugin_dir_path( __FILE__ ))
-		error_log("DEBUG: ".$msg, 0);
-	}
+	// private function msgdebug ($msg) {
+	// 	//$this->msgdebug("PAHT:".plugin_dir_path( __FILE__ ))
+	// 	error_log("DEBUG: ".$msg, 0);
+	// }
 
 	public function __construct() {
 		add_action( 'init', array( $this, 'init_wp_register' ) );
@@ -57,6 +57,7 @@ class embed_block_for_github {
 			'render_callback' => array( $this, 'ebg_embed_repository' ),
 			'attributes'      => array(
 				'github_url' => array( 'type' => 'string' ),
+				'github_token' => array( 'type' => 'string'),
 			),
 		) );
 	}
@@ -108,17 +109,15 @@ class embed_block_for_github {
 	}
 
 	public function ebg_embed_repository( $attributes ) {
-		$github_url = trim( $attributes['github_url'] );
-		// $token = trim($attributes['github_token']);
+		$github_url = trim( $attributes['github_url']);
+		$token = trim($attributes['github_token']);
 		$a_remplace = [];
 		
 		if ( '' === trim( $github_url ) ) {
 			$content = '<p>' . esc_html__( 'Use the Sidebar to add the URL of the GitHub Repository to embed.', 'embed-block-for-github' ) . '</p>';
 		} else {
-	
 			if ( filter_var( $github_url, FILTER_VALIDATE_URL ) ) {
 				if ( strpos( $github_url, 'https://github.com/' ) === 0 ) {
-						$token = 'Generate personal access tokens -> https://github.com/settings/tokens';
 						$args = array(
 							'headers' => array(
 								'Authorization' => 'Bearer ' . $token,
@@ -155,13 +154,11 @@ class embed_block_for_github {
 				$content = '<p>' . esc_html__( 'Use the Sidebar to add the URL of the GitHub Repository to embed.', 'embed-block-for-github' ) . '</p>';
 			}
 		}
-
 		foreach ($a_remplace as $key => $val) {
 			$content = str_replace($key, $val, $content);
 		}
 		return $content;
 	}
-
 }
 
 $embed_block_for_github = new embed_block_for_github();

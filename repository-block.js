@@ -30,9 +30,9 @@
 		github_url: {
 	    	type: 'string',
 		},
-		// github_token: {
-	    // 	type: 'string',
-		// },
+		github_token: {
+	    	type: 'string',
+		},
 	},
 
 	edit: function ( props ) {
@@ -65,18 +65,18 @@
 							}
 						}
 					),
-					// el(
-					// 	TextControl, {
-					// 		type: 'text',
-					// 		label: i18n.__( 'Enter personalized Github access token' ),
-					// 		value: github_token,
-					// 		onChange: function ( new_token ) {
-					// 			props.setAttributes( { github_token: new_token } )
-					// 		}
-					// 	}
-					// ),
+					el(
+						TextControl, {
+							type: 'text',
+							label: i18n.__( 'Enter personalized Github access token' ),
+							value: github_token,
+							onChange: function ( new_token ) {
+								props.setAttributes( { github_token: new_token } )
+							}
+						}
+					),
 				)
-			),			
+			),
 		]
 	},
 
