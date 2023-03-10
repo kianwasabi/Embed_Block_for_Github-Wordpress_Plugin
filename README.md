@@ -25,12 +25,13 @@ INSERT ScREENSHOTS
 4) <kbd> REMOVE AVATAR </kbd>
 INSERT SCREENSHOTS 
 ## HOW TO: 
+
 Easy to use!
-1. Download this repository 
-2. Install the plugin and activate.
+1. Download this repository as .zip file.
+2. Install the plugin and activate in wordpress.
 3. Insert GiHub Repo Block.
 4. Go to the editor and choose GitHub Repo block.
-5. Add the URL of the repository AND your GitHub token and see the magic happen.
+5. Add the URL of the repository & your GitHub token and see the magic happen.
 6. Embed your GitHub Repositories in your Post content.
 
 ## Status:
