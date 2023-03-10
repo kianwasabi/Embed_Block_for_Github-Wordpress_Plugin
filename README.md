@@ -1,4 +1,4 @@
-## Embed Block for GitHub - modifed
+## Embed Block for GitHub
 This WordPress plugin adds your favorite GitHub Repositories as a Embed Block to the Block Editor.
 <br>
 This plugin is a modified version of the "embed-block-for-github" wordpress plugin (see: [GitHub](https://github.com/audrasjb/embed-block-for-github).)<br>
@@ -14,15 +14,16 @@ Personally, i do see the need to have a "darkmode" option in the plugin. <br>
 3) <kbd> MAKE CLICKABLE LINKS </kbd><br>
 The hyperlinks are not clickable!<br>
 4) <kbd> REMOVE AVATAR </kbd> <br>
-Having an avatar on the card is a nice gimmick but not necessary in my opinion. <br> 
+In my opinion, having an avatar on the card is a nice gimmick but not necessary. <br> 
 ## Concept & Result: 
 1) <kbd>FIX API RATE LIMIT EXCEEDED </kbd><br>
 Use authorized API requests at the github api through personalized bearer token. Furthermore, the plugin's inspector needs an extra text field to enter the personalized access token. <br>
 2) <kbd> REMOVE DARKMODE </kbd><br> 
 Removed dark mode from files.<br>
 3) <kbd> MAKE CLICKABLE LINKS </kbd><br>
+INSERT ScREENSHOTS
 4) <kbd> REMOVE AVATAR </kbd>
-
+INSERT SCREENSHOTS 
 ## HOW TO: 
 Easy to use!
 1. Download this repository 
