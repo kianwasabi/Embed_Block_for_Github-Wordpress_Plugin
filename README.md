@@ -24,15 +24,17 @@ Therefore, it has been modified regarding the points shown below.
 * Links on card are not clickable!<br>
 * Moreover, I belive that an avatar shown on the card is a nice gimmick but not essential. <br> 
 
+
 <p align="center">
-<a href="url"><img src="https://user-images.githubusercontent.com/55065075/224512288-a1447621-57c1-4776-986f-57054fea6185.png"height="auto" width="550"></a>
-</p>
+<a href="url"><img src="https://user-images.githubusercontent.com/55065075/224512669-75d102f6-5ede-45f5-9056-2e866c080c3e.png" height="auto" width="450">>
+
 
 ## Concept & Result: 
 <kbd>FIX API RATE LIMIT EXCEEDED </kbd> , <kbd> REMOVE DARKMODE </kbd> & <kbd> REMOVE AVATAR </kbd><br> 
 * Use authorized API requests at the github api through personalized bearer access token. (see: [WordPress Auth](https://developer.wordpress.org/apis/making-http-requests/authentication/) & [GitHub rate limit](https://docs.github.com/en/rest/rate-limit?apiVersion=2022-11-28))<br>
 * In Addition, the plugin's inspector needed an extra text field to enter the personalized access token. <br>
-<img width="1241" alt="Screenshot 2023-03-11 at 22 06 33" src="https://user-images.githubusercontent.com/55065075/224512310-8a1f00c7-5e04-4b0b-b842-4272c17d75ac.png">
+<p align="center">
+<a href="url"><img src="https://user-images.githubusercontent.com/55065075/224512310-8a1f00c7-5e04-4b0b-b842-4272c17d75ac.png">
 
 <kbd> MAKE CLICKABLE LINKS </kbd><br>
 * Issue was already solved but never merged to the master branch. (see:[pull request](https://github.com/audrasjb/embed-block-for-github/pull/11))<br>
