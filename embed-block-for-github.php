@@ -4,7 +4,7 @@
  * @since             0.1
  * @package           Embed Block for GitHub  
  *
- * Plugin Name:       Embed Block for GitHub
+ * Plugin Name:       Embed Block for GitHub - modified
  * Plugin URI:        https://github.com/kianwasabi/embed-block-for-github_authorized-api-request
  * Description:       Easily embed GitHub repositories in Gutenberg Editor - Authenticating to GitHub with personal access token 
  * Version:           0.4
@@ -12,7 +12,7 @@
  * Author URI:        https://jeanbaptisteaudras.com / https://warias.eu
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       embed-block-for-github
+ * Text Domain:       embed-block-for-github-modified
  */
 
 // If this file is called directly, abort.
