@@ -26,16 +26,15 @@ Therefore, the plugin has been modified regarding the points shown below.
 <p align="center">
 <a href="url"><img src="https://user-images.githubusercontent.com/55065075/224512669-75d102f6-5ede-45f5-9056-2e866c080c3e.png" height="auto" width="450">>
 
-
 ## Concept & Result: 
 <kbd>FIX API RATE LIMIT EXCEEDED </kbd> , <kbd> REMOVE DARKMODE </kbd> & <kbd> REMOVE AVATAR </kbd><br> 
 * Use authorized API requests at the GitHub API through personalized bearer access tokens. (see: [WordPress Auth](https://developer.wordpress.org/apis/making-http-requests/authentication/) & [GitHub rate limit](https://docs.github.com/en/rest/rate-limit?apiVersion=2022-11-28))<br>
 * In Addition, the plugin's inspector needed an extra text field to enter the personalized access token. <br>
 <p align="center">
-<a href="url"><img src="https://user-images.githubusercontent.com/55065075/224512310-8a1f00c7-5e04-4b0b-b842-4272c17d75ac.png">
+<a href="url"><img src="https://user-images.githubusercontent.com/55065075/224566424-7618a300-7da0-46e5-af40-290f9d921d1f.png">
 
 <kbd> MAKE CLICKABLE LINKS </kbd><br>
-* Issue was already solved in a [pull request](https://github.com/audrasjb/embed-block-for-github/pull/11) but never merged to the master branch. <br>
+* Issue was already solved in a [pull request]() but never merged to the master branch. <br>
 
 
 ## HOW TO: 
