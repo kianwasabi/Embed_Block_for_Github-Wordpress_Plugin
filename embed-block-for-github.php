@@ -2,17 +2,17 @@
 /**
  * @link              https://jeanbaptisteaudras.com
  * @since             0.1
- * @package           Embed Block for GitHub  
+ * @package           Embed Block for GitHub
  *
- * Plugin Name:       Embed Block for GitHub - modified
- * Plugin URI:        https://github.com/kianwasabi/embed-block-for-github_authorized-api-request
- * Description:       Easily embed GitHub repositories in Gutenberg Editor - Authenticating to GitHub with personal access token 
- * Version:           0.4
- * Author:            audrasjb - modified by kianwasabi
- * Author URI:        https://jeanbaptisteaudras.com / https://warias.eu
+ * Plugin Name:       Embed Block for GitHub
+ * Plugin URI:        https://jeanbaptisteaudras.com/embed-block-for-github-gutenberg-wordpress/
+ * Description:       Easily embed GitHub repositories in Gutenberg Editor.
+ * Version:           0.3
+ * Author:            audrasjb
+ * Author URI:        https://jeanbaptisteaudras.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       embed-block-for-github-modified
+ * Text Domain:       embed-block-for-github
  */
 
 // If this file is called directly, abort.

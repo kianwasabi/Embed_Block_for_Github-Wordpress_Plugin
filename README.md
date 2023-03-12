@@ -36,7 +36,6 @@ Therefore, the plugin has been modified regarding the points shown below.
 <kbd> MAKE CLICKABLE LINKS </kbd><br>
 * Issue was already solved in a [pull request]() but never merged to the master branch. <br>
 
-
 ## HOW TO: 
 Easy to use!
 1. Create your personal [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
@@ -55,3 +54,16 @@ Potential for enhancements - Open for contributions.
 * Kian David Warias 
 * Original Contributors: audrasjb, whodunitagency, pedromendonca, vsc55 (see: [audrasjb etc.](https://github.com/audrasjb/embed-block-for-github))
 
+## Original Readme
+=== Embed Block for GitHub ===
+Contributors: audrasjb, whodunitagency, pedromendonca, vsc55
+Donate link: https://www.paypal.me/audrasjb
+Tags: GitHub, embed, block, Gutenberg, bloc, gist, git, repository, card
+Requires at least: 5.2
+Tested up to: 5.4
+Stable tag: 0.3
+Requires PHP: 5.6
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Easily embed GitHub repositories in Gutenberg Editor.
