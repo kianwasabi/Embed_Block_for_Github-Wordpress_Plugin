@@ -10,6 +10,7 @@
  * Version:           0.3
  * Author:            audrasjb
  * Author URI:        https://jeanbaptisteaudras.com
+ * 
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       embed-block-for-github
