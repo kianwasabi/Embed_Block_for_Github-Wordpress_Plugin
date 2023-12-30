@@ -1,10 +1,11 @@
 ## Embed Block for GitHub
-* This WordPress plugin easily adds your favorite GitHub projects as an Embed Block to the Gutenberg Block Editor.
-* Forked & Modified version of the ["embed-block-for-github"](https://jeanbaptisteaudras.com/en/2019/08/new-plugin-github-embed-block-for-gutenberg/)
+This WordPress plugin easily adds your favorite GitHub projects as an Embed Block to the Gutenberg Block Editor.
 <p align="center">
 <a href="url"><img  src="https://user-images.githubusercontent.com/55065075/224489524-46b58108-e1c3-4848-94ea-4cfb09b2a662.png" height="auto" width="600">
 </p>
 </p>
+
+>Forked & Modified version of the ["embed-block-for-github"](https://jeanbaptisteaudras.com/en/2019/08/new-plugin-github-embed-block-for-gutenberg/) <br>
 
 ## How to use:
 1. Create your personal [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
