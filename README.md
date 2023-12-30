@@ -51,5 +51,4 @@ Works fine.
 Potential for enhancements - Open for contributions. 
 
 ## Author: 
-* Kian David Warias 
-* Original Contributors: audrasjb, whodunitagency, pedromendonca, vsc55 (see: [audrasjb etc.](https://github.com/audrasjb/embed-block-for-github))
+* Kian Wasabi
